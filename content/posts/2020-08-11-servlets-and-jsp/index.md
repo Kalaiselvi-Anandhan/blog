@@ -1,7 +1,7 @@
 ---
 title: Servlets and JSP
 author: Vishnu Rajeev
-date: 2020-09-11
+date: 2020-08-11
 hero: ./images/servlets_and_jsp.jpg
 slug: servlets-and-jsp
 excerpt: A brief introduction to servlets and JSP
@@ -52,20 +52,15 @@ Servlets extend HttpServlet and override doGet or doPost, depending on whether t
 
 The servlet life cycle contains five phases:
 
-1. **Load a servlet class:** 
-The servlet is loaded when the first request for the servlet is received by the web container.
+1. **Load a servlet class:** The servlet is loaded when the first request for the servlet is received by the web container.
 
-2. **Servlet instance is created:**
-At the time the servlet is loaded, the server creates a single instance. That single instance handles every request made to the servlet.
+2. **Servlet instance is created:** At the time the servlet is loaded, the server creates a single instance. That single instance handles every request made to the servlet.
 
-3. **init() method:**
-init() method is called after creating the servlet instance. It is used to initialize the servlet. init() is guaranteed to be called and completed before the servlet handles its first request.
+3. **init() method:** init() method is called after creating the servlet instance. It is used to initialize the servlet. init() is guaranteed to be called and completed before the servlet handles its first request.
 
-4. **service() method:**
-service() method is called whenever a request for a servlet is received. service() method is used to handle requests for the servlet. The service() method accepts 2 parameters: a request object and a response object.
+4. **service() method:** service() method is called whenever a request for a servlet is received. service() method is used to handle requests for the servlet. The service() method accepts 2 parameters: a request object and a response object.
 
-5. **destroy() method:**
-The servlet calls the destroy() method after the servlet has been taken out of service and all pending requests have completed or timed out.
+5. **destroy() method:** The servlet calls the destroy() method after the servlet has been taken out of service and all pending requests have completed or timed out.
 
 # What is JSP?
 
@@ -75,14 +70,13 @@ JSP stands for JavaServer Pages. JSP is mainly used for implementing the GUI par
 
 There are many advantages of JSP over servlets. They are as follows:
 
-1. **More features:**
-JSP technology is the extension of servlet technology. We can use all the features of the servlet in JSP. Also, we can use implicit objects, predefined tags, expression language, and custom tags in JSP, which makes JSP development easy.
-2. **Maintenance is easier:**
-JSP can be easily managed because we can easily separate our business logic with presentation logic. In servlet technology, we mix our business logic with the presentation logic.
-3. **Faster development:**
-No need to recompile and redeploy. If the JSP page is modified, we don’t need to recompile and redeploy the project. The servlet code needs to be updated and recompiled if we have to change the look and feel of the application.
-4. **Less code:**
-In JSP, we can use many tags such as action tags, JSTL, custom tags, etc. that reduce the code. Also, we can use Expression Language, implicit objects, etc.
+1. **More features:** JSP technology is the extension of servlet technology. We can use all the features of the servlet in JSP. Also, we can use implicit objects, predefined tags, expression language, and custom tags in JSP, which makes JSP development easy.
+
+2. **Maintenance is easier:** JSP can be easily managed because we can easily separate our business logic with presentation logic. In servlet technology, we mix our business logic with the presentation logic.
+
+3. **Faster development:** No need to recompile and redeploy. If the JSP page is modified, we don’t need to recompile and redeploy the project. The servlet code needs to be updated and recompiled if we have to change the look and feel of the application.
+
+4. **Less code:** In JSP, we can use many tags such as action tags, JSTL, custom tags, etc. that reduce the code. Also, we can use Expression Language, implicit objects, etc.
 
 # JSP Example
 
